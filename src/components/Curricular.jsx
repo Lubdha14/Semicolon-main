@@ -1,8 +1,11 @@
 import React from 'react';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 function Curricular() {
   return (
     <div style={{ textAlign: 'center' }}>
+      <Navbar/>
       <h1>Extra Activities</h1>
       <section style={{ marginBottom: '20px' }}>
         <h2>Singing</h2>
@@ -185,6 +188,7 @@ function Curricular() {
         </div>
       </section>
       {/* Add more sections for other activities */}
+      <Footer/>
     </div>
   );
 }

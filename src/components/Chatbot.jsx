@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./Chatbot.css";
+import Navbar from './Navbar'
+import Footer from './Footer'
 const Chatbot = () => {
   const [messages, setMessages] = useState([
     { text: "Hello! How can I assist you today?", isBot: true },
@@ -41,6 +43,7 @@ const Chatbot = () => {
         borderRadius: "5px",
       }}
     >
+      <Navbar/>
       <div
         className="chat-history"
         style={{ maxHeight: "300px", overflowY: "auto" }}
@@ -91,6 +94,7 @@ const Chatbot = () => {
           Send
         </button>
       </div>
+      <Footer/>
     </div>
   );
 };

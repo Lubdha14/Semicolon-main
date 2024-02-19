@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+// import Navbar from './Navbar'
+import Footer from './Footer'
 
 function About() {
   return (
-    <div className="about-container">
+    <div className="about-container" style={{marginTop:"50px"}}>
+       {/* <Navbar/> */}
       <h1>ABOUT US</h1>
       <p>
         Our eLearning platform offers a diverse range of courses catering to
@@ -28,32 +31,31 @@ function About() {
         {/* Team member 1 */}
         <div className="team-member">
           {/* <img src="/images/team_member1.jpeg" alt="Rajeshree" /> */}
-          <h4>Rajshri</h4>
-          <p>Speech Therapist</p>
-          <p>
-            Rajeshree is a dedicated speech therapist with over 10 years of
-            experience. She specializes in helping individuals of all ages
-            overcome speech challenges and improve communication skills.
-          </p>
-          <p>Contact: rajeshree@example.com Phone:09096769868</p>
+          <h4>Yogita Mahajan</h4>
+        
+          
         </div>
 
         {/* Team member 2 */}
         <div className="team-member">
-          {/* <img src="/images/team_member2.jpeg" alt="Joe" /> */}
-          <h4>Joe</h4>
-          <p>Speech Language Pathologist</p>
-          <p>
-            Joe is a skilled speech language pathologist who is passionate about
-            assisting children and adults in achieving their full potential in
-            communication.
-          </p>
-          <p>Contact: joe.smith@example.com Phone: 09096769868</p>
+          {/* <img src="/images/team_member1.jpeg" alt="Joe" /> */}
+          <h4>Neha Baviskar</h4>
+         
         </div>
-      </div>
-
+         <div className="/images/team-member">
+          {/* <img src="team_member1.jpeg" alt="Joe" /> */}
+          <h4>Lubdha Borole</h4>
+          
+        </div>
+        <div className="/images/team-member">
+          {/* <img src="team_member1.jpeg" alt="Joe" /> */}
+          <h4>Rekha Mahajan</h4>
+          
+        </div>
+        </div>
+        <Footer/>
+        </div>
       
-    </div>
   );
 }
 

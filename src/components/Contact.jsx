@@ -1,4 +1,6 @@
 import React from 'react';
+import Navbar from './Navbar'
+import Footer from './Footer'
 
 const Contact = () => {
   const handleEmail = () => {
@@ -17,8 +19,9 @@ const Contact = () => {
 
   return (
     <div style={{ textAlign: 'center' }}>
+      <Navbar/>
       <h1>Contact Us</h1>
-      <p>Feel free to reach out to us using the following methods:</p>
+      <p></p>
       <button style={styles.button} onClick={handleEmail}>
         Email Us
       </button>
@@ -26,13 +29,14 @@ const Contact = () => {
         Call Us
       </button>
       <h2>Or</h2>
-      <p>Fill out the form below:</p>
+      
       <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <input type="text" placeholder="Your Name" style={styles.input} />
         <input type="email" placeholder="Your Email" style={styles.input} />
         <textarea placeholder="Your Message" style={styles.textarea}></textarea>
         <button type="submit" style={styles.button}>Submit</button>
       </form>
+      <Footer/>
     </div>
   );
 };

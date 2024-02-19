@@ -127,7 +127,7 @@ function Quiz() {
       {showScore ? (
         <div>
           <h2>Quiz Finished!</h2>
-          <p>Your score is {score}/{questions.length}</p>
+          <h2>Your score is {score}/{questions.length}</h2>
         </div>
       ) : (
         <div style={{ marginTop: '20px' }}>

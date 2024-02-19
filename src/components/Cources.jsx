@@ -1,9 +1,12 @@
 import React from 'react'
 import Video from './Class1.mp4';
 import { Link } from "react-router-dom";
+import Navbar from './Navbar';
+import Footer from './Footer';
 function Cources() {
   return (
     <div style={{ textAlign: "center", padding: "20px" }}>
+      <Navbar/>
       <h1 style={{ fontWeight: "bold" }}>Class 1</h1>
       <div style={{ marginBottom: "20px" }}>
         <h2>Video</h2>
@@ -14,7 +17,7 @@ function Cources() {
       </div>
       <div style={{ marginBottom: "20px" }}>
         <h2>First Standard Syllabus</h2>
-        <p>
+        <p style={{font:"bold",textAlign:"center"}}>
           In 1st standard, children typically begin to build foundational skills
           across various domains, including academic, social, emotional, and
           physical development.
@@ -26,12 +29,12 @@ function Cources() {
         <ul style={{ listStyleType: "none", padding: 0 }}>
           <li style={{ marginBottom: "10px" }}>
             <a href="./mathew.pdf" download>
-              Math
+              <b style={{color:"black"}}>Math</b>
             </a>
           </li>
           <li style={{ marginBottom: "10px" }}>
             <a href="./Science.pdf" download>
-              Science
+              <b style={{color:"black"}}>Science</b>
             </a>
           </li>
           {/* Add more downloadable books with their links */}
@@ -39,7 +42,7 @@ function Cources() {
       </div>
       <div>
         <h2>Language Arts</h2>
-        <p>
+        <p style={{font:"bold",textAlign:"center"}}>
           Recognizing and understanding the alphabet (both uppercase and
           lowercase letters). Basic phonics knowledge, including letter sounds
           and simple word decoding.
@@ -76,6 +79,7 @@ function Cources() {
           {/* Add more subject buttons */}
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
